@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/https//maxiturchet.github.io/react-taskapp/static/css/main.a9d8c88d.css",
-    "main.js": "/https//maxiturchet.github.io/react-taskapp/static/js/main.9bd8abea.js",
+    "main.css": "/https//maxiturchet.github.io/react-taskapp/static/css/main.a329afbb.css",
+    "main.js": "/https//maxiturchet.github.io/react-taskapp/static/js/main.4415a586.js",
     "index.html": "/https//maxiturchet.github.io/react-taskapp/index.html",
-    "main.a9d8c88d.css.map": "/https//maxiturchet.github.io/react-taskapp/static/css/main.a9d8c88d.css.map",
-    "main.9bd8abea.js.map": "/https//maxiturchet.github.io/react-taskapp/static/js/main.9bd8abea.js.map"
+    "main.a329afbb.css.map": "/https//maxiturchet.github.io/react-taskapp/static/css/main.a329afbb.css.map",
+    "main.4415a586.js.map": "/https//maxiturchet.github.io/react-taskapp/static/js/main.4415a586.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9d8c88d.css",
-    "static/js/main.9bd8abea.js"
+    "static/css/main.a329afbb.css",
+    "static/js/main.4415a586.js"
   ]
 }
