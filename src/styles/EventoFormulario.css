@@ -1,0 +1,84 @@
+.evento-formulario{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .evento-input{
+    width: 49%;
+    font-size: 18px;
+    background-color: #1b1b12;
+    color: #eee;
+    padding: 14px 32px 16px 16px;
+    border-radius: 4px;
+    border: 2px solid #1b1b12;
+    outline: none;
+    font-family: Indie Flower, sans-serif;
+  }
+
+  .calendario-contenedor {
+    width: 32%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: Indie Flower, sans-serif;
+    color: #ccc;
+    background-color: #1b1b12;
+    padding: 14px 10px 14px 10px;
+    border-radius: 4px;
+    border: 2px solid #1b1b12;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+
+  
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+    background-color: #1b1b50;
+    color: white;
+    outline: none;
+}
+
+::-webkit-datetime-edit-text {
+    opacity: 0;
+}
+
+::-webkit-calendar-picker-indicator{
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+  cursor: pointer;
+} 
+
+  .evento-boton{
+    width: 15%;
+    height: 60px;
+    font-size: 16px;
+    font-family: Indie Flower, sans-serif;
+    border: 1px solid #1b1b50;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color:#1b1b50;
+    color: #eee;
+    text-transform: capitalize;
+    padding: 1%;
+  }
+
+  .icon-date{
+    font-size: 130%;
+    margin-bottom: 2px;
+    cursor: pointer;
+    user-select:none;
+  }
+  
+  .evento-boton:hover{
+    background-color: #2a2a74;
+    color:#fff;
+    user-select:none;
+  }
+

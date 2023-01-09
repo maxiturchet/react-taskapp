@@ -1,0 +1,11 @@
+.eventos-contenedor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.evento-lista-contenedor.hidden{
+    display: none;
+}

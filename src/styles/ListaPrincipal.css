@@ -1,0 +1,37 @@
+.tareas-lista-contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.evento-lista-contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.todo-contenedor{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todo-contenedor.hidden{
+    display:none
+}
+
+.eventos-contenedor{
+    width: 100%;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eventos-contenedor.hidden{
+    display:none;
+}

@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { ListaPrincipal } from "./componentes/ListaPrincipal";
+import { Menu } from "./componentes/Menu";
 
 function App() {
+  const [mostrar, setMostrar] = useState(true);
+
+  const mostrarTodo = () => {
+    if (!mostrar) {
+      setMostrar(!mostrar);
+    }
+  };
+  const mostrarEvent = () => {
+    if (mostrar) {
+      setMostrar(!mostrar);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="titulo-contenedor">
+        <h1>My Tasks</h1> 
+      </div>
+      <div className="tareas-lista-principal">
+        <Menu mostrarTodo={mostrarTodo} mostrarEvent={mostrarEvent} />
+        <ListaPrincipal 
+          mostrar={mostrar} />
+      </div>
     </div>
   );
 }

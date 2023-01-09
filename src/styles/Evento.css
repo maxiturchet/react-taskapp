@@ -1,0 +1,124 @@
+.evento-contenedor{
+    width: 100%;
+    min-height: 65px;
+    background-color: #1b1b32;
+    margin-top: 15px;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .dias-restantes-contenedor{
+    text-align: center;
+    margin-right: 8%;
+    margin-left: 10px;
+  }
+  
+  .days-dias-restantes{
+    font-size: 20px;
+  }
+  .numero-dias-restantes{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .evento-texto{
+    width: 35%;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+    user-select:none;
+  }
+
+  .evento-texto-input{
+    width: 90%;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    font-size: 22px;
+    font-family: Indie Flower, sans-serif;
+    outline: none;
+    color: #fff;
+    background-color: #555;
+    padding: 14px 10px;
+  }
+
+  ::placeholder{
+    color:#ccc
+  }
+
+  .evento-texto-data{
+    width: 100%;
+    border: none;
+    font-size: 22px;
+    font-family: Indie Flower, sans-serif;
+    outline: none;
+    color: #fff;
+  }
+
+  .evento-fecha-input{
+      width: 90%;
+      height: 60px;
+      font-size: 20px;
+      font-family: Indie Flower, sans-serif;
+      color: #ccc;
+      background-color: #555;
+      padding: 14px 10px 14px 10px;
+      border-radius: 4px;
+      border: none;
+      text-align: center;
+      outline: none;
+      cursor: pointer;
+      margin-right: 0;
+  }
+
+  .evento-texto-input.hidden,
+  .evento-texto-data.hidden,
+  .evento-fecha-data.hidden,
+  .evento-fecha-input.hidden,
+  .evento-icono-edit.hidden,
+  .evento-icono-check.hidden{
+    display: none;
+  }
+
+
+  .evento-fecha{
+    text-align: center;
+    width: 35%;
+    font-size: 20px;
+  }
+
+  .evento-icono{
+    width: 5%;
+  }
+
+  .evento-icono-borrar,
+  .evento-edit-icono,
+  .evento-icono-edit{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  
+  .evento-contenedor:nth-child(3n + 1){
+    background-color: #1b1b32;
+  }
+  
+  .evento-contenedor:nth-child(3n + 2){
+    background-color: #2a2a40;
+  }
+  
+  .evento-contenedor:nth-child(3n + 3){
+    background-color: #3b3b4f;
+  }
+  
+  .evento-contenedor.terminado{
+    background-color: #5a01a7;
+    text-decoration: line-through;
+  }
