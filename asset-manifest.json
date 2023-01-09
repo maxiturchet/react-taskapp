@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-taskapp/static/css/main.a329afbb.css",
+    "main.css": "/react-taskapp/static/css/main.dda7bffd.css",
     "main.js": "/react-taskapp/static/js/main.4415a586.js",
     "index.html": "/react-taskapp/index.html",
-    "main.a329afbb.css.map": "/react-taskapp/static/css/main.a329afbb.css.map",
+    "main.dda7bffd.css.map": "/react-taskapp/static/css/main.dda7bffd.css.map",
     "main.4415a586.js.map": "/react-taskapp/static/js/main.4415a586.js.map"
   },
   "entrypoints": [
-    "static/css/main.a329afbb.css",
+    "static/css/main.dda7bffd.css",
     "static/js/main.4415a586.js"
   ]
 }
