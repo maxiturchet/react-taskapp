@@ -9,6 +9,7 @@ export const ListaDeTareas = ({ mostrar}) => {
   const [tareas, setTareas] = useState([]);
   const [tareasTerminadas, setTareasFinalizadas] = useState([]) 
   const [tareasActivas, setTareasActivas] = useState([])
+  const [data, setData] = useState('focusAll')
   const [tareasEstados, setTareasEstados] = useState({
     'tareasAll': true,
     'tareasActive': false,
@@ -74,6 +75,8 @@ export const ListaDeTareas = ({ mostrar}) => {
   }
   
   const manejarAll = () => {
+    const focus = 'focusAll'
+    setData(focus)
     setTareas(tareas)
     const tareasStatus = {'tareasAll': true,
     'tareasActive': false,
@@ -82,6 +85,8 @@ export const ListaDeTareas = ({ mostrar}) => {
   }
 
   const manejarActive = () => {
+    const focus = 'focusActive'
+    setData(focus)
     const tareasActivas = tareas.filter(tarea => tarea.completada === false)
     setTareasActivas(tareasActivas)
     const tareasStatus = {'tareasAll': false,
@@ -91,6 +96,8 @@ export const ListaDeTareas = ({ mostrar}) => {
   }
 
   const manejarFinished = () => {
+    const focus = 'focusFinished'
+    setData(focus)
     const tareasTerminadas = tareas.filter(tarea => tarea.completada === true)
     setTareasFinalizadas(tareasTerminadas)
     const tareasStatus = {'tareasAll': false,
@@ -107,7 +114,8 @@ export const ListaDeTareas = ({ mostrar}) => {
   return (
     <div className={mostrar ? "todo-contenedor" : "todo-contenedor hidden"}>
         <TareaFormulario onSubmit={agregarTarea} />
-        <MenuEstados 
+        <MenuEstados
+          isFocus={data}
           manejarAll={manejarAll}
           manejarActive={manejarActive} 
           manejarFinished={manejarFinished}/>

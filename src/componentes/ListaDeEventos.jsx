@@ -10,6 +10,7 @@ export const ListaDeEventos = ({ mostrar }) => {
   const [eventos, setEventos] = useState([])
   const [eventosFinalizados, setEventosFinalizados] = useState([]) 
   const [eventosActivos, setEventosActivos] = useState([])
+  const [data, setData] = useState('focusAll')
   const [eventosEstados, setEventosEstados] = useState({
     'eventosAll': true,
     'eventosActive': false,
@@ -70,6 +71,8 @@ export const ListaDeEventos = ({ mostrar }) => {
   }
 
   const manejarAll = () => {
+    const focus = 'focusAll'
+    setData(focus)
     setEventos(eventos)
     const eventosStatus = {'eventosAll': true,
     'eventosActive': false,
@@ -78,6 +81,8 @@ export const ListaDeEventos = ({ mostrar }) => {
   }
 
   const manejarActive = () => {
+    const focus = 'focusActive'
+    setData(focus)
     const eventosActivos = eventos.filter(evento => evento.terminado === false)
     setEventosActivos(eventosActivos)
     const eventosStatus = {'eventosAll': false,
@@ -87,6 +92,8 @@ export const ListaDeEventos = ({ mostrar }) => {
   }
 
   const manejarFinished = () => {
+    const focus = 'focusFinished'
+    setData(focus)
     const eventosTerminados = eventos.filter(evento => evento.terminado === true)
     setEventosFinalizados(eventosTerminados)
     const eventosStatus = {'eventosAll': false,
@@ -103,7 +110,8 @@ export const ListaDeEventos = ({ mostrar }) => {
   return (
     <div className={mostrar ? "eventos-contenedor hidden" : "eventos-contenedor"}>
       <EventoFormulario onSubmit={agregarEvento} />
-      <MenuEstados 
+      <MenuEstados
+          isFocus={data}
           manejarAll={manejarAll}
           manejarActive={manejarActive} 
           manejarFinished={manejarFinished}/>

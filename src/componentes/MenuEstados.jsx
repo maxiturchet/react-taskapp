@@ -1,20 +1,35 @@
+import { useState } from 'react'
 import '../styles/MenuEstados.css'
 
-export const MenuEstados = ({ manejarAll, manejarActive, manejarFinished}) => {
+export const MenuEstados = ({ 
+      manejarAll, 
+      manejarActive,
+      manejarFinished,
+      isFocus
+}) => {
+
+  const [focus, setFocus] = useState(isFocus)
+
   return (
     <div className='menu-eventos-contenedor'>
         <div 
-            className='eventos-all'
+            className={isFocus === 'focusAll'
+              ? 'eventos-all focus'
+              : 'eventos-all'}
             onClick={manejarAll}> 
           All
         </div>
         <div
-            className='eventos-active'
+            className={isFocus === 'focusActive'
+              ? 'eventos-active focus'
+              : 'eventos-active'}
             onClick={manejarActive}>
           Active
         </div>
         <div
-            className='eventos-finished'
+            className={isFocus === 'focusFinished'
+              ? 'eventos-finished focus'
+              : 'eventos-finished'}
             onClick={manejarFinished}>
           Finished
         </div>

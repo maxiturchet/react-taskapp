@@ -25,9 +25,9 @@
     color: #fff;
 }
 
-.eventos-all:focus,
-.eventos-active:focus,
-.eventos-finished:focus{
+.eventos-all.focus,
+.eventos-active.focus,
+.eventos-finished.focus{
     font-size: 25px;
     color: #fff;
 }
