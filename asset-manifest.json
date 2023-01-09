@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/https//maxiturchet.github.io/react-taskapp/static/css/main.a9d8c88d.css",
+    "main.js": "/https//maxiturchet.github.io/react-taskapp/static/js/main.9bd8abea.js",
+    "index.html": "/https//maxiturchet.github.io/react-taskapp/index.html",
+    "main.a9d8c88d.css.map": "/https//maxiturchet.github.io/react-taskapp/static/css/main.a9d8c88d.css.map",
+    "main.9bd8abea.js.map": "/https//maxiturchet.github.io/react-taskapp/static/js/main.9bd8abea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9d8c88d.css",
+    "static/js/main.9bd8abea.js"
+  ]
+}
